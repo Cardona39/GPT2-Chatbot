@@ -83,11 +83,11 @@ while True:
             closest_portfolio = min(differences, key=lambda x: x[0])[1]
 
             # Get the name of the closest portfolio
-            closest_portfolio_name = num_to_name[closest_portfolio['risk']]
+            closest_portfolio_name = num_to_name[closest_portfolio['num']]
 
             print("chat:", custom_response)
             print("\nInvestment Recommendations:")
-            print(f"\nBased on your Cardona Score, the closest portfolio is {closest_portfolio_name} - Portfolio {closest_portfolio['risk']}.")
+            print(f"\nBased on your Cardona Score, the closest portfolio is {closest_portfolio_name} - Portfolio {closest_portfolio['num']}.")
 
     except KeyboardInterrupt:
         print("\nChatbot closed")
